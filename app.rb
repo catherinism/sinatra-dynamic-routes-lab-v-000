@@ -34,14 +34,17 @@ class App < Sinatra::Base
     @operation = params[:operation]
 
     if @operation == "add"
-      sum = @number1 + @number2
-    
-    @subtract = @number2 - @number1
-    "#{@subtract}"
-    @multiply = @number1 * @number2
-    "#{@multiply}"
-    @divide = @number1 / @number2
-    "#{@divide}"
+      @sum = @number1 + @number2
+      "#{@sum}"
+    elsif @operation == "subtract"
+      @difference = @number2 - @number1
+      "#{@subtract}"
+    elsif @operation == "multiply"
+      @product = @number1 * @number2
+    "#{@product}"
+  elsif @operation == "divide"
+    @quotient = @number1 / @number2
+    "#{@quotient}"
   end
 
 end
