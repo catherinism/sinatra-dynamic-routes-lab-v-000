@@ -38,7 +38,7 @@ class App < Sinatra::Base
       "#{@sum}"
     elsif @operation == "subtract"
       @difference = @number1 - @number2
-      "#{@subtract}"
+      "#{@difference}"
     elsif @operation == "multiply"
       @product = @number1 * @number2
     "#{@product}"
