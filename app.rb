@@ -46,6 +46,6 @@ class App < Sinatra::Base
     @quotient = @number1 / @number2
     "#{@quotient}"
   end
-  end
+end
 
 end
